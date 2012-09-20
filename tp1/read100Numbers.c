@@ -4,14 +4,14 @@ main()
 {
   int maximum;
   int value;
-  int rangMaximum;
+  int indexMaximum;
   int n = 100;
 
   // Initialization
   printf("Entrer la valeur 1 =");
   scanf("%d", &value);
   maximum = value;
-  rangMaximum = 1;
+  indexMaximum = 1;
 
   // Iteration
   int i;
@@ -22,10 +22,10 @@ main()
       if (value > maximum)
         {
           maximum = value;
-          rangMaximum = i;
+          indexMaximum = i;
         }
     }
 
   printf("Le maximum des 100 valeurs est =%d\n",maximum);
-  printf("Le rang du maximum est =%d\n", rangMaximum);
+  printf("Le rang du maximum est =%d\n", indexMaximum);
 }
